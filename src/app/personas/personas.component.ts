@@ -13,6 +13,7 @@ export class PersonasComponent implements OnInit {
   sexo : string
   nombre : string
   apellido : string
+  mostrar : Boolean = false
   personas : Array<Persona> = []
   ngOnInit(): void {
     this.personas = [{
@@ -48,5 +49,7 @@ export class PersonasComponent implements OnInit {
       
     ]
   }
-
+  mostrar_lista() : void{
+    this.mostrar = this.mostrar == false ? true : false
+  }
 }
