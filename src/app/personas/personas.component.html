@@ -1,13 +1,1 @@
-<ul><h1>Equipo #1</h1></ul>
-<input type="checkbox" (click) = "mostrar_lista()"><label> Lista de personas</label>
-<div *ngIf = "mostrar">
-    <div *ngFor="let persona of personas">
-        <ul>
-            <input type="radio" id="other" name="gender" value="other"> <a> {{ persona.nombre }}</a></ul>
-        </div>
-</div>
-<div>
-    <ul><h3>Ver datos</h3><input type="radio" id="other" name="gender" value="other"> 
-        <h3>Ocultar</h3><input type="radio" id="other" name="gender" value="other"></ul>
-</div>
-
+<ul><input type="radio" name="per"> {{ persona.nombre }}</ul>
