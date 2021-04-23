@@ -1,7 +1,9 @@
 <div>
   <ul><h1>Personas</h1></ul>
-  <personas [persona] = 'persona' *ngFor ='let persona of personas' (click) = "mostrar_persona(persona)"></personas>
+  <personas [persona] = 'persona' *ngFor ='let persona of personas' (click) = 'mostrar_persona(persona)' (click) = 'mostrar = true'></personas>
 
 </div>
-<ul><h1>Datos</h1></ul>
-<datos [persona] = 'persona1'></datos>
+<div *ngIf='mostrar'>
+  <ul><h1>Datos</h1></ul>
+  <datos [persona] = 'persona1'></datos>
+</div>
